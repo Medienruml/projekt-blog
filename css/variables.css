@@ -1,0 +1,7 @@
+:root {
+    --primary-green: rgba(78, 164, 135, 1);
+    --primary-green-bright: rgba(78, 164, 135, 0.2);
+    --primary-yellow: #f1c953;
+    --secondary-brown: rgba(84, 55, 13, 1);
+    --neutral: #3d3d3d;
+}
