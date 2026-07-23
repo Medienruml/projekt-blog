@@ -1,0 +1,303 @@
+.section-head {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+h2+p {
+    font-family: 'Palanquin';
+    font-size: 24px;
+    font-weight: 500;
+    text-align: center;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+}
+
+/* SLIDER */
+
+.slider {
+    position: relative;
+
+    width: 100%;
+    height: 533px;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+
+    overflow: hidden;
+
+    border-top-right-radius: 100px;
+}
+
+.slider input {
+    z-index: 2;
+}
+
+.slider_wrapper {
+    width: 400%;
+    height: 100%;
+
+    display: flex;
+    position: absolute;
+
+    transition: all 1s ease-in-out;
+}
+
+.slider_element {
+    width: calc(100% / 4);
+    height: 100%;
+    padding: 64px 128px 0 48px;
+}
+
+.element_one {
+    background-image: url('/assets/img/slider-img-01.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.element_two {
+    background-image: url('/assets/img/slider-img-02.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.element_three {
+    background-image: url('/assets/img/slider-img-03.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.element_four {
+    background-image: url('/assets/img/slider-img-04.jpg');
+    background-size: cover;
+    background-position: center;
+}
+
+.slider input[value="one"]:checked~.slider_wrapper {
+    transform: translateX(37.5%);
+}
+
+.slider input[value="two"]:checked~.slider_wrapper {
+    transform: translateX(12.5%);
+}
+
+.slider input[value="three"]:checked~.slider_wrapper {
+    transform: translateX(-12.5%);
+}
+
+.slider input[value="four"]:checked~.slider_wrapper {
+    transform: translateX(-37.5%);
+}
+
+.slider .radio-buttons {
+    display: flex;
+    gap: 22px;
+}
+
+input[type="radio"] {
+    position: relative;
+    bottom: 40px;
+    appearance: none;
+
+    width: 28px;
+    height: 28px;
+
+    background-color: white;
+
+    border: unset;
+    border-radius: 999px;
+
+    cursor: pointer;
+    transition: 0.2s;
+
+    margin: 0 11px;
+}
+
+input[type="radio"]:checked {
+    width: 40px;
+    background: var(--primary-yellow);
+}
+
+
+
+.slider a {
+    text-decoration: none;
+}
+
+.slider a div {
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    padding: 16px 24px;
+    background-color: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+}
+
+.slider h6 {
+    font-family: "Palanquin Dark";
+    font-weight: 600;
+    font-size: 48px;
+    color: white;
+}
+
+.slider p {
+    font-family: 'Palanquin';
+    font-weight: 400;
+    font-size: 28px;
+    color: white;
+}
+
+
+/* ACCORDION */
+
+.accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+    width: 100%;
+}
+
+.accordion details {
+    font: 700 24px 'Palanquin';
+    padding: 16px 14px;
+    background-color: var(--primary-yellow);
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.accordion summary {
+    position: relative;
+    background: var(--primary-yellow);
+    list-style: none;
+}
+
+.accordion summary img {
+    width: 24px;
+    height: 24px;
+    position: absolute;
+    right: 0;
+    transition: rotate 0.5s ease-in-out;
+}
+
+.accordion details[open] summary img {
+    position: absolute;
+    right: 0;
+    rotate: -180deg;
+}
+
+.accordion details::details-content {
+    display: block;
+    block-size: 0;
+    font: 500 16px 'Palanquin';
+    background-color: White;
+    border-radius: 5px;
+    overflow: hidden;
+    opacity: 0;
+
+    transition-property: block-size, content-visibility, margin-top, opacity;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    transition-behavior: allow-discrete;
+}
+
+.accordion details[open]::details-content {
+    block-size: auto;
+    padding: 4px 10px;
+    margin-top: 16px;
+    opacity: 1;
+}
+
+/* Contact form */
+
+.contact-form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 64px;
+}
+
+.contact-form div {
+    display: flex;
+    flex-direction: column;
+    flex: 1 1 500px;
+}
+
+.contact-form label {
+    font: 500 24px 'Palanquin';
+    color: var(--secondary-brown);
+}
+
+.contact-form input[type=text] {
+    font: 500 24px 'Roboto Mono';
+    border: unset;
+    padding: 16px 8px;
+    border-bottom: 1px solid black;
+}
+
+
+.submit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 64px;
+}
+
+.submit .checkfield {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.submit input[type="checkbox"] {
+    appearance: none;
+
+    width: 18px;
+    height: 18px;
+    border: 2px solid black;
+    border-radius: 2px;
+}
+
+.submit input[type="checkbox"]:hover {
+    background-color: var(--primary-yellow);
+}
+
+.submit input[type="checkbox"]:checked {
+    background-color: var(--primary-green);
+    background-image: url("/assets/icons/check_icon.svg");
+    background-repeat: no-repeat;
+    background-position: center center;
+    border: unset;
+}
+
+.submit p {
+    font: 400 16px 'Palanquin';
+}
+
+.submit p > em {
+    font-style: normal;
+    color: var(--primary-green);
+}
+
+.submit p > em:hover {
+    font-weight: 600;
+    cursor: pointer;
+}
+
+.submit .error {
+    color: var(--error);
+}
+
+.submit .check
+
+.submit button {
+    background-color: unset;
+    font: 700 24px 'Arima';
+    color: #737373;
+    padding: 0 24px;
+    border-radius: 999px;
+    border: 1px solid rgba(48, 48, 48, 0.5);
+}

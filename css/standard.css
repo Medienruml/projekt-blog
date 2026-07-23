@@ -11,6 +11,17 @@ body {
     justify-content: center;
 }
 
+main {
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+    padding: 120px 0;
+}
+
+.wrapper {
+    padding: 0 max(240px, calc(50% - 770px));
+}
+
 h1 {
     font-family: 'Arima';
     font-weight: 600;
@@ -24,7 +35,7 @@ h2 {
     font-weight: 600;
     font-size: 52px;
     color: var(--primary-green);
-
+    text-align: center;
 }
 
 h3 {
@@ -69,15 +80,14 @@ p {
 /* HEADER */
 
 header {
-    width: 100%;
-    height: 128px;
-    padding: 0 max(240px, calc(50% - 770px));
-    background-color: var(--primary-green);
-    color: white;
-
     display: flex;
     align-items: center;
-    gap: 100px;
+    gap: 100px; 
+
+    width: 100%;
+    height: 128px;
+    background-color: var(--primary-green);
+    color: white;
 }
 
 header img {
@@ -87,9 +97,95 @@ header img {
 
 header nav ul {
     display: flex;
+    align-items: center;
     gap: 72px;
 }
 
 header li {
+    font-family: 'Arima';
+    font-weight: 600;
+    font-size: 24px;
+    list-style: none;
+}
+
+header a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 4px 8px;
+
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+header .nav-highlights a:hover {
+    background-image: url('/assets/icons/hover-bg-img-highlights.svg');
+}
+
+header .nav-faq a:hover {
+    background-image: url('/assets/icons/hover-bg-img-faq.svg');
+}
+
+header .nav-contact a:hover {
+    background-image: url('/assets/icons/hover-bg-img-contacts.svg');
+}
+
+header a:active {
+    color: var(--primary-yellow);
+}
+
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 152px;
+    background-color: var(--primary-green);
+    color: white;
+}
+
+footer * {
+    color: white;
+    font-family: 'Palanquin';
+    font-weight: 400;
+}
+
+footer > div {
+    display: flex;
+    align-items: center;
+    gap: 72px;
+}
+
+footer .copyright {
+    display: flex;
+    gap: 8px;
+
+    
+    font-size: 18px;
+}
+
+footer a {
     text-decoration: none;
 }
+
+
+footer .social-media-buttons {
+    display: flex;
+
+    gap:16px;
+}
+
+
+footer .social-media-buttons li {
+
+    list-style: none;
+}
+
+footer .social-media-buttons img {
+    height: 32px;
+}
+
+

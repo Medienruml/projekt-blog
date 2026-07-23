@@ -13,22 +13,160 @@
 </head>
 
 <body>
-    <h1>Headline</h1>
-    <div class="content">
-        <header>
+    <header class="wrapper">
 
-            <img src="/assets/icons/logo-blog.svg" alt="Logo vom Reiseblog">
 
-            <nav>
-                <ul>
-                    <li><a href="">Home</a></li>
-                    <li><a href="">FAQ</a></li>
-                    <li><a href="">Contact</a></li>
-                </ul>
-            </nav>
+        <img src="/assets/icons/logo-blog.svg" alt="Logo vom Reiseblog">
+        <nav>
+            <ul>
+                <li class="nav-highlights"><a href="#section-highlights">Highlights</a></li>
+                <li class="nav-faq"><a href="#section-faq">FAQ</a></li>
+                <li class="nav-contact"><a href="#section-contact">Contact</a></li>
+            </ul>
+        </nav>
 
-        </header>
-    </div>
+
+    </header>
+
+    <main>
+
+        <section id="section-highlights" class="section-highlights wrapper">
+            <div class="section-head">
+                <h2><img src="/assets/icons/rocket-highlights.svg" alt="Icon von einer Rakete">Highlights</h2>
+                <p>From the vibrant cultures of Asia to the sun-drenched islands of the Caribbean and the serene
+                    landscapes of
+                    Scandinavia, each destination offers a distinct way to explore the world. </p>
+            </div>
+
+            <div class="slider">
+                <input type="radio" name="slider" value="one" checked>
+                <input type="radio" name="slider" value="two">
+                <input type="radio" name="slider" value="three">
+                <input type="radio" name="slider" value="four">
+
+                <div class="slider_wrapper">
+                    <a href="article1.html" class="slider_element element_one">
+                        <div>
+                            <h6>The World’s Most Breathtaking Beaches</h6>
+                            <p>From powder-soft white sands to dramatic coastlines kissed by turquoise waves, these
+                                beaches are more than destinations — they’re feelings.</p>
+                        </div>
+                    </a>
+                    <a href="article2.html" class="slider_element element_two">
+                        <div>
+                            <h6>Copenhagen in 3 Days: Big Experiences, Smart Spending</h6>
+                            <p>Discover Copenhagen, where historic charm meets modern design, vibrant cycling culture
+                                and waterfront living.</p>
+                        </div>
+                    </a>
+                    <a href="article3.html" class="slider_element element_three">
+                        <div>
+                            <h6>Pattaya Pulse: <br />
+                                Food, Sun and Neon Nights</h6>
+                            <p>From bustling promenades to nearby islands, the city offers an energetic and diverse
+                                escape. Discover Pattaya City, with vibrant nightlife and rich cultural landmarks.</p>
+                        </div>
+                    </a>
+                    <a class="slider_element element_four">
+                        <div>
+                            <h6>Mountain Fuji</h6>
+                            <p>The most iconic mountain and an active volcano located about 100 kilometers southwest of
+                                Tokyo. Written with the characters for “wealth” and “samurai,” Fuji’s name evokes a
+                                sense of strength, honor, and enduring prestige.</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section id="section-faq" class="section-faq wrapper">
+            <h2><img src="/assets/icons/help-faq.svg" alt="">FAQ</h2>
+            <div class="accordion">
+                <details name="accordion" open>
+                    <summary>What’s the story behind my travel blog?<img src="/assets/icons/arrow.svg" alt=""></summary>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, vero facilis nostrum ut,
+                        exercitationem nam, labore commodi illum quam saepe dolorum enim esse soluta assumenda harum
+                        dolores. Repellat, blanditiis officiis?</p>
+                </details>
+                <details name="accordion">
+                    <summary>How do I plan, document, and share my travels?<img src="/assets/icons/arrow.svg" alt="">
+                    </summary>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, vero facilis nostrum ut,
+                        exercitationem nam, labore commodi illum quam saepe dolorum enim esse soluta assumenda harum
+                        dolores. Repellat, blanditiis officiis?</p>
+                </details>
+                <details name="accordion">
+                    <summary>How can brands, companies, or fellow creators collaborate with me or get in touch?<img
+                            src="/assets/icons/arrow.svg" alt=""></summary>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, vero facilis nostrum ut,
+                        exercitationem nam, labore commodi illum quam saepe dolorum enim esse soluta assumenda harum
+                        dolores. Repellat, blanditiis officiis?</p>
+                </details>
+                <details name="accordion">
+                    <summary>How can readers support this blog and the work behind it?<img src="/assets/icons/arrow.svg"
+                            alt=""></summary>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Rerum, vero facilis nostrum ut,
+                        exercitationem nam, labore commodi illum quam saepe dolorum enim esse soluta assumenda harum
+                        dolores. Repellat, blanditiis officiis?</p>
+                </details>
+            </div>
+        </section>
+
+        <section id="section-contact" class="section-contact wrapper">
+            <h2><img src="/assets/icons/person-pin-contact.svg" alt="">Contact form</h2>
+            <p>Have a question or an idea to collaborate?
+                Get in touch—I’d love to hear from you and explore how we can work together.</p>
+
+            <div class="contact-form">
+                <div>
+                    <label for="name">What's your name?</label>
+                    <input type="text" name="name" id="">
+                </div>
+                <div>
+                    <label for="email">What's your email?</label>
+                    <input type="text" name="email" id="">
+                </div>
+                <div>
+                    <label for="help">How can I help?</label>
+                    <input type="text" name="help" id="">
+                </div>
+            </div>
+
+            <div class="submit">
+                <div>
+                    <div class="check">
+                        <input type="checkbox" name="privacy-police" id="">
+                        <p>I've read the <em>privacy policy</em> and agree to the processing of my data as outlined.</p>
+                    </div>
+                    <p class="error">Please accept the privacy policy.</p>
+                </div>
+                <button type="submit">Send</button>
+            </div>
+        </section>
+
+    </main>
+    <footer class="wrapper">
+
+        <div>
+            <div class="copyright">
+                <img src="/assets/icons/copyright.svg" alt="Copyright-Icon">
+                <p>Travelblog 2026</p>
+            </div>
+
+            <a href="">Imprint</a>
+            <a href="">Cookie Preferences</a>
+        </div>
+
+
+
+
+        <ul class="social-media-buttons">
+            <li><img src="/assets/icons/icon-tiktok-yellow.svg" alt=""></li>
+            <li><img src="/assets/icons/icon-youtube-yellow.svg" alt=""></li>
+            <li><img src="/assets/icons/icon-facebook-yellow.svg" alt=""></li>
+            <li><img src="/assets/icons/icon-instagram-yellow.svg" alt=""></li>
+        </ul>
+    </footer>
 
 </body>
 
