@@ -1,0 +1,41 @@
+.section-three{
+    display: flex;
+    flex-direction: column;
+    background-color: #4EA48733;
+;
+    width: 272px;
+    height: 389px;
+
+    border-radius: 30px;
+    padding: 16px;
+    gap: 16px;
+    
+}
+
+.section-three>img{
+    width: 120px;
+    height: 120px;
+
+    border-radius: 50%;
+}
+
+.section-three>p{
+    font-family: 'Arima';
+
+}
+
+.tama{
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.author{
+    font-weight: 400;
+    font-size: 18px;
+}
+
+.tamara-intro>p{
+    font-family: 'Palanquin';
+    font-weight: 400;
+    font-size: 16px;
+}
