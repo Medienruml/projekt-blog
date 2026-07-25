@@ -1,0 +1,44 @@
+article img {
+    box-shadow: -2px 4px 12px rgba(0, 0, 0, 0.25);
+    border-radius: 48px;
+}
+
+.big-pic-one-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 48px;
+}
+
+.big-pic-one-column img {
+    width: min(880px, 100%);
+}
+
+.two-columns {
+    display: flex; 
+    flex-direction: column;
+    gap: 48px;
+
+}
+
+.two-columns > div.articles {
+    display: flex;
+    flex-direction: row;
+    gap: 80px;
+    flex-wrap: wrap;
+}
+
+.two-columns article {
+    display: flex;
+    flex-direction: column;
+    flex: 1 0 400px;
+    gap: 48px;
+    align-items: stretch;
+}
+
+.two-columns article img {
+    width: 100%;
+    margin-top: auto;
+    aspect-ratio: 1/0.9;
+    object-fit: cover;
+}

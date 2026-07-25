@@ -10,12 +10,14 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    min-height: 100dvh;
 }
 
 main {
     display: flex;
     flex-direction: column;
     gap: 120px;
+    flex-grow: 1;
     padding: 120px 0;
 }
 
@@ -70,6 +72,7 @@ h5 {
     font-weight: 600;
     font-size: 32px;
     color: var(--secondary-brown);
+    text-align: center;
 }
 
 h6 {
@@ -277,6 +280,7 @@ header a:active {
 
 .author-summary>p {
     font: 400 16px 'Palanquin';
+    line-height: 120%;
 }
 
 /* FOOTER */
