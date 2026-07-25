@@ -198,6 +198,87 @@ header a:active {
     }
 }
 
+/*article header*/
+
+.article-header {
+    width: 100%;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 40px;
+}
+
+.aticle-header-content {
+    flex: 5 0 70%;
+}
+
+.aticle-header-content>.article-header-intro {
+    font: 400 32px 'Palanquin';
+
+    gap: 40px;
+}
+
+.meta-data {
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+
+    padding-top: 40px;
+
+    gap: 32px;
+    row-gap: 8px;
+
+    font: 400 16px 'Palanquin';
+}
+
+.meta-data>.meta-item {
+    display: flex;
+    align-items: center;
+
+    gap: 8px;
+}
+
+.author-card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    background-color: #4EA48733;
+
+    flex: 1 0 270px;
+
+    border-radius: 30px;
+    padding: 16px;
+    gap: 16px;
+
+}
+
+.author-card>img {
+    width: 120px;
+    height: 120px;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+}
+
+.author-title {
+    text-align: center;
+}
+
+.author-name {
+    font: 700 18px 'Arima';
+}
+
+.author-role {
+    font: 400 18px 'Arima';
+}
+
+.author-summary>p {
+    font: 400 16px 'Palanquin';
+}
+
 /* FOOTER */
 
 footer {
