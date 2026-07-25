@@ -6,7 +6,7 @@
 }
 
 body {
-    display: flex; 
+    display: flex;
     flex-direction: column;
     justify-content: center;
 }
@@ -82,7 +82,7 @@ p {
 header {
     display: flex;
     align-items: center;
-    gap: 100px; 
+    gap: 100px;
 
     width: 100%;
     height: 128px;
@@ -153,7 +153,7 @@ footer * {
     font-weight: 400;
 }
 
-footer > div {
+footer>div {
     display: flex;
     align-items: center;
     gap: 72px;
@@ -163,7 +163,7 @@ footer .copyright {
     display: flex;
     gap: 8px;
 
-    
+
     font-size: 18px;
 }
 
@@ -175,7 +175,7 @@ footer a {
 footer .social-media-buttons {
     display: flex;
 
-    gap:16px;
+    gap: 16px;
 }
 
 
@@ -187,5 +187,3 @@ footer .social-media-buttons li {
 footer .social-media-buttons img {
     height: 32px;
 }
-
-

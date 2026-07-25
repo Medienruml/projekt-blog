@@ -93,66 +93,19 @@ a {
     font-size: 16px;
 }
 
-.main-slider {
+.lorem-element>p {
+    font-family: 'Palanquin';
+    font-weight: 400;
+    font-size: 24px;
+    
+    color: var(--neutral);
+}
+
+.video-elemen {
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
 
-    gap: 64px;
-
-    width: 100%;
-}
-
-.slider-header {
-    display: flex;
-    align-items: center;
-
-    color: #54370D;
-
-    font-family: 'Arima';
-    font-family: 32px;
-    font-weight: 600;
-
-
-}
-
-.slider_b {
-
-    padding-top: 80px;
-    padding-bottom: 80px;
-
-    display: flex;
-
-
-}
-
-.slider_b_element {
-    z-index: 1;
-    width: 300px;
-    height: 440px;
-
-    box-shadow: -9px 5px 20px 0px #00000040;
-
-
-
-
-    border-radius: 16px;
-
-    transform: perspective(250px) rotateY(20deg) translateX(-20px);
-    transform-origin: 50% 50%;
-
-    transition: all 250ms ease-in-out;
-}
-
-.slider_b_element:hover {
-    z-index: 2;
-
-    transform: perspective(250px) rotateY(0deg) translateX(0px) scaleX(1.5) scaleY(1.2);
-}
-
-.slider_b_element:hover~.slider_b_element {
-    transform: perspective(250px) rotateY(-20deg) translateX(20px);
+    padding: 137px 377px;
 }
 
 .lorem-element-one>p {
@@ -240,14 +193,14 @@ span {
     color: var(--secondary-brown);
 }
 
-.button{
+.button {
     width: 158px;
-    
+
     display: flex;
 
     padding-right: 24px;
     padding-left: 24px;
-    
+
 
     color: var(--primary-yellow);
     background-color: var(--primary-green);
