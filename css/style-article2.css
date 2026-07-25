@@ -15,15 +15,13 @@ a {
     font-family: 'Palanquin';
     font-weight: 400;
     font-size: 24px;
-    
+
     color: var(--neutral);
 }
 
-.video-elemen {
+.video-element {
     display: flex;
     justify-content: center;
-
-    padding: 137px 377px;
 }
 
 .lorem-element-one>p {
@@ -76,11 +74,6 @@ span {
     background-color: #4EA48733;
 }
 
-.link {
-    color: #4EA487;
-    text-decoration: none;
-}
-
 .lorem-element-four>p {
     font-family: Palanquin;
     font-weight: 400;
@@ -112,13 +105,9 @@ span {
 }
 
 .button {
-    width: 158px;
-
     display: flex;
 
-    padding-right: 24px;
-    padding-left: 24px;
-
+    padding: 8px 16px;
 
     color: var(--primary-yellow);
     background-color: var(--primary-green);

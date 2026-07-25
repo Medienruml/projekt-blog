@@ -283,6 +283,55 @@ header a:active {
     line-height: 120%;
 }
 
+/* profi tipp */
+
+.pro-tipp-box{
+    width: 200px;
+    background-color: var(--primary-green);
+
+    padding: 8px 16px ;
+
+    display: flex;
+    align-items: center;
+
+    border-radius: 10px;
+
+    transform: rotate(-15deg);
+
+    position: relative;
+    top: 20px;
+}
+
+.pro-tipp-box>img{
+    width: 42px;
+}
+
+.pro-tipp-box>p{
+    font: 700 28px 'Palanquin';
+    color: var(--primary-yellow);
+
+
+}
+
+.pro-tipp-content{
+    background-color: var( --primary-green-bright);
+
+    padding: 24px 16px;
+    padding-left: 40px;
+
+    margin-left: 64px;
+    margin-right: 64px;
+
+    border-radius: 30px;
+
+    font: 400 24px 'Palanquin';
+}
+
+.pro-tipp-content a {
+    color: #4EA487;
+    text-decoration: none;
+}
+
 /* FOOTER */
 
 footer {
