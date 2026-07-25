@@ -159,13 +159,9 @@ span {
 }
 
 .button {
-    width: 158px;
-
     display: flex;
 
-    padding-right: 24px;
-    padding-left: 24px;
-
+    padding: 8px 16px;
 
     color: var(--primary-yellow);
     background-color: var(--primary-green);
