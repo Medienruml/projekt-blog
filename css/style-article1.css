@@ -3,7 +3,7 @@ body {
     height: 100%;
 }
 
-a {
+.header-section a {
     font-family: 'Arima';
     font-size: 24px;
     font-weight: 700;
@@ -64,13 +64,13 @@ a {
 }
 
 .slider_b_element:hover {
-    z-index: 2;
+    z-index: -2;
 
     transform: perspective(250px) rotateY(0deg) translateX(0px) scaleX(1.5) scaleY(1.2);
 }
 
 .slider_b_element:hover~.slider_b_element {
-    transform: perspective(250px) rotateY(-20deg) translateX(20px);
+    transform: perspective(250px) rotateY(-20deg) translateX(120px);
 }
 
 .lorem-element-one>p {
@@ -139,13 +139,20 @@ span {
 
 }
 
-.lorem-element-five {
+.share-button{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 
     gap: 48px;
+
+    position: relative;
+}
+
+.arrow{
+    position: absolute;
+    bottom: 13px;
 }
 
 .follow-me {
@@ -158,8 +165,9 @@ span {
     color: var(--secondary-brown);
 }
 
-.button {
+summary {
     display: flex;
+    align-items: center;
 
     padding: 8px 16px;
 
@@ -169,4 +177,33 @@ span {
     border-radius: 40px;
 
     gap: 8px;
+}
+
+details[open] summary img{
+    display: none;
+}
+
+details{
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+}
+
+.hidden-links a{
+    display: flex;
+
+    font: 600 18px 'Arima';
+
+    color: var( --primary-green);
+}
+
+.hidden-links{
+    display: flex;
+    gap: 16px;
+}
+
+.hidden-links>div{
+    display: flex;
+    flex-direction: column;
 }

@@ -14,15 +14,15 @@
 </head>
 
 <body>
-    <header class="wrapper">
+    <header class="header-section wrapper">
 
         <img src="/assets/icons/logo-blog.svg" alt="Logo vom Reiseblog">
 
         <nav>
             <ul>
-                <li><a href="">Highlights</a></li>
-                <li><a href="">FAQ</a></li>
-                <li><a href="">Contact</a></li>
+                <li class="nav-highlights"><a href="index.html#section-highlights">Highlights</a></li>
+                <li class="nav-faq"><a href="index.html#section-faq">FAQ</a></li>
+                <li class="nav-contact"><a href="index.html#section-contact">Contact</a></li>
             </ul>
         </nav>
 
@@ -133,28 +133,39 @@
                 in comm odo porta scelerisque turpis gravida semper. </p>
         </section>
 
-        <section class="lorem-element-five wrapper">
-            <p class="follow-me">Follow me for more content like this, and <br> share the article with your friends!</p>
+        <section class="share-button wrapper">
+           <p class="follow-me"> <img class="arrow" src="./assets/icons/Vector 12.svg" alt=""> Follow me for more content like this, and <br> share the article with your friends!</p>
 
-            <p class="button"><img src="./assets/icons/share yellow.png" alt="share-icon">Share</p>
+            <details>
+                <summary><img src="./assets/icons/share yellow.png" alt="share-icon">Share</summary>
+                <div class="hidden-links">
+                    <img src="./assets/icons/share-icon.svg" alt="">
+                    <div>
+                        <a href="">LinkedIn</a>
+                        <a href="">WhatsApp</a>
+                    </div>
+                </div>
+            </details>
         </section>
 
         <footer class="wrapper">
 
             <div>
-                <div class="copyright">
+                <div class="footer-copyright">
                     <img src="/assets/icons/copyright.svg" alt="Copyright-Icon">
                     <p>Travelblog 2026</p>
                 </div>
+                <ul class="footer-links">
+                    <li><a href="impressum.html">Imprint</a></li>
+                    <li><a href="">Cookie Preferences</a></li>
+                </ul>
 
-                <a href="">Imprint</a>
-                <a href="">Cookie Preferences</a>
             </div>
 
 
 
 
-            <ul class="social-media-buttons">
+            <ul class="footer-social-media-buttons">
                 <li><img src="/assets/icons/icon-tiktok-yellow.svg" alt=""></li>
                 <li><img src="/assets/icons/icon-youtube-yellow.svg" alt=""></li>
                 <li><img src="/assets/icons/icon-facebook-yellow.svg" alt=""></li>
