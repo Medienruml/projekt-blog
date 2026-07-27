@@ -3,14 +3,6 @@ body {
     height: 100%;
 }
 
-a {
-    font-family: 'Arima';
-    font-size: 24px;
-    font-weight: 700;
-
-    color: #F8F5EB;
-}
-
 .lorem-element>p {
     font-family: 'Palanquin';
     font-weight: 400;
@@ -92,6 +84,13 @@ span {
     align-items: center;
 
     gap: 48px;
+
+    position: relative;
+}
+
+.arrow{
+    position: absolute;
+    bottom: 13px;
 }
 
 .follow-me {

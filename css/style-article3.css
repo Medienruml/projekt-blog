@@ -42,3 +42,72 @@ article img {
     aspect-ratio: 1/0.9;
     object-fit: cover;
 }
+
+.share-button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 48px;
+
+    position: relative;
+}
+
+.arrow{
+    position: absolute;
+    bottom: 13px;
+}
+
+.follow-me {
+    font-family: 'Arima';
+    font-weight: 500;
+    font-size: 24px;
+
+    text-align: center;
+
+    color: var(--secondary-brown);
+}
+
+summary {
+    display: flex;
+    align-items: center;
+
+    padding: 8px 16px;
+
+    color: var(--primary-yellow);
+    background-color: var(--primary-green);
+
+    border-radius: 40px;
+
+    gap: 8px;
+}
+
+details[open] summary img{
+    display: none;
+}
+
+details{
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+}
+
+.hidden-links a{
+    display: flex;
+
+    font: 600 18px 'Arima';
+
+    color: var( --primary-green);
+}
+
+.hidden-links{
+    display: flex;
+    gap: 16px;
+}
+
+.hidden-links>div{
+    display: flex;
+    flex-direction: column;
+}
