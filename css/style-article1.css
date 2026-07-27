@@ -26,11 +26,11 @@ body {
     display: flex;
     align-items: center;
 
-    color: #54370D;
+    /* color: #54370D;
 
     font-family: 'Arima';
     font-family: 32px;
-    font-weight: 600;
+    font-weight: 600; */
 
 
 }
@@ -73,39 +73,39 @@ body {
     transform: perspective(250px) rotateY(-20deg) translateX(120px);
 }
 
-.lorem-element-one>p {
+/* .lorem-element-one>p {
     font-family: 'Palanquin';
     font-size: 24px;
     font-weight: 400;
     color: var(--neutral);
-}
+} */
 
 .info {
     display: flex;
     flex-direction: column;
 }
 
-.lorem-element-two>p {
+/* .lorem-element-two>p {
     font-family: 'Palanquin';
     font-size: 24px;
     font-weight: 400;
 
     padding-bottom: 40px;
-}
+} */
 
-.lorem-element-two li {
+/* .lorem-element-two li {
     font-family: 'Palanquin';
     font-size: 24px;
     font-weight: 400;
     color: var(--neutral);
-}
+} */
 
 span {
-    font-family: Palanquin;
+    /* font-family: Palanquin; */
     font-weight: 700;
-    font-style: Bold;
+    /* font-style: Bold;
     font-size: 24px;
-    color: var(--neutral);
+    color: var(--neutral); */
 }
 
 .lorem-element-three {
@@ -128,7 +128,7 @@ span {
     text-decoration: none;
 }
 
-.lorem-element-four>p {
+/* .lorem-element-four>p {
     font-family: Palanquin;
     font-weight: 400;
     font-size: 24px;
@@ -137,73 +137,5 @@ span {
 
 
 
-}
+} */
 
-.share-button{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-
-    gap: 48px;
-
-    position: relative;
-}
-
-.arrow{
-    position: absolute;
-    bottom: 13px;
-}
-
-.follow-me {
-    font-family: 'Arima';
-    font-weight: 500;
-    font-size: 24px;
-
-    text-align: center;
-
-    color: var(--secondary-brown);
-}
-
-summary {
-    display: flex;
-    align-items: center;
-
-    padding: 8px 16px;
-
-    color: var(--primary-yellow);
-    background-color: var(--primary-green);
-
-    border-radius: 40px;
-
-    gap: 8px;
-}
-
-details[open] summary img{
-    display: none;
-}
-
-details{
-    display: flex;
-    align-items: center;
-
-    gap: 10px;
-}
-
-.hidden-links a{
-    display: flex;
-
-    font: 600 18px 'Arima';
-
-    color: var( --primary-green);
-}
-
-.hidden-links{
-    display: flex;
-    gap: 16px;
-}
-
-.hidden-links>div{
-    display: flex;
-    flex-direction: column;
-}

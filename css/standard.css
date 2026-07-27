@@ -16,9 +16,9 @@ body {
 main {
     display: flex;
     flex-direction: column;
-    gap: 120px;
+    gap: clamp(48px, calc(36.571px + 3.571vw), 88px);
     flex-grow: 1;
-    padding: 120px 0;
+    padding: clamp(24px, calc(-3.429px + 8.571vw), 120px) 0;
 }
 
 .wrapper {
@@ -28,15 +28,14 @@ main {
 h1 {
     font-family: 'Arima';
     font-weight: 600;
-    font-size: 60px;
+    font-size: clamp(2.00rem, calc(1.500rem + 2.500vw), 3.75rem);
     color: var(--secondary-brown);
-
 }
 
 h2 {
     font-family: 'Arima';
     font-weight: 600;
-    font-size: 52px;
+    font-size: clamp(2.50rem, calc(2.286rem + 1.071vw), 3.25rem);
     color: var(--primary-green);
     text-align: center;
 
@@ -47,14 +46,14 @@ h2 {
 }
 
 h2>img {
-    width: 48px;
-    height: 48px;
+    width: clamp(40px, calc(37.714px + 0.714vw), 48px);
+    height: clamp(40px, calc(37.714px + 0.714vw), 48px);
 }
 
 h3 {
     font-family: 'Arima';
     font-weight: 600;
-    font-size: 64px;
+    font-size: clamp(2.50rem, calc(2.071rem + 2.143vw), 4.00rem);
     color: var(--primary-yellow);
 
 }
@@ -62,32 +61,38 @@ h3 {
 h4 {
     font-family: 'Palanquin';
     font-weight: 600;
-    font-size: 40px;
-    color: #4EA487;
+    font-size: clamp(1.25rem, calc(0.893rem + 1.786vw), 2.50rem);
+    color: var(--primary-green);
 
 }
 
 h5 {
     font-family: 'Arima';
     font-weight: 600;
-    font-size: 32px;
+    font-size: clamp(1.25rem, calc(1.036rem + 1.071vw), 2.00rem);
     color: var(--secondary-brown);
     text-align: center;
 }
 
 h6 {
-    font-family: 'Arima';
-    font-weight: 700;
-    font-size: 18px;
-    color: var(--secondary-brown);
+    font-family: 'Palanquin Dark';
+    font-weight: 600;
+    font-size: clamp(1.75rem, calc(1.393rem + 1.786vw), 3.00rem);
+    color: white;
 }
 
 p {
     font-family: 'Palanquin';
     font-weight: 400;
-    font-size: 24px;
+    font-size: clamp(1.00rem, calc(0.857rem + 0.714vw), 1.50rem);
     color: var(--neutral);
+}
 
+li {
+    font-family: 'Palanquin';
+    font-weight: 400;
+    font-size: clamp(1.00rem, calc(0.857rem + 0.714vw), 1.50rem);
+    color: var(--neutral);
 }
 
 
@@ -216,6 +221,12 @@ header a:active {
     flex: 5 0 70%;
 }
 
+.aticle-header-content > div:first-child {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
 .aticle-header-content>.article-header-intro {
     font: 400 32px 'Palanquin';
 
@@ -331,6 +342,79 @@ header a:active {
     color: #4EA487;
     text-decoration: none;
 }
+
+/* Share-Button */
+
+.share-button{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    gap: 48px;
+
+    position: relative;
+}
+
+.share-button .arrow{
+    position: absolute;
+    bottom: 13px;
+}
+
+ .share-button .follow-me {
+    font-family: 'Arima';
+    font-weight: 500;
+    font-size: clamp(1.00rem, calc(0.857rem + 0.714vw), 1.50rem);
+
+    text-align: center;
+
+    color: var(--secondary-brown);
+}
+
+.share-button summary {
+    display: flex;
+    align-items: center;
+
+    padding: 8px 16px;
+
+    color: var(--primary-yellow);
+    background-color: var(--primary-green);
+
+    border-radius: 40px;
+
+    gap: 8px;
+}
+
+.share-button details[open] summary img{
+    display: none;
+}
+
+.share-button details{
+    display: flex;
+    align-items: center;
+
+    gap: 10px;
+}
+
+.share-button .hidden-links a{
+    display: flex;
+
+    font: 600 18px 'Arima';
+
+    color: var( --primary-green);
+}
+
+.share-button .hidden-links{
+    display: flex;
+    gap: 16px;
+}
+
+.share-button .hidden-links>div{
+    display: flex;
+    flex-direction: column;
+}
+
+
 
 /* FOOTER */
 

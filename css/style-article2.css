@@ -3,40 +3,44 @@ body {
     height: 100%;
 }
 
-.lorem-element>p {
+/* .lorem-element>p {
     font-family: 'Palanquin';
     font-weight: 400;
     font-size: 24px;
 
     color: var(--neutral);
-}
+} */
 
 .video-element {
     display: flex;
     justify-content: center;
 }
 
-.lorem-element-one>p {
+.video-element img {
+    width: min(100%, 930px);
+}
+
+/* .lorem-element-one>p {
     font-family: 'Palanquin';
     font-size: 24px;
     font-weight: 400;
     color: var(--neutral);
-}
+} */
 
 .info {
     display: flex;
     flex-direction: column;
 }
 
-.lorem-element-two>p {
+/* .lorem-element-two>p {
     font-family: 'Palanquin';
     font-size: 24px;
     font-weight: 400;
 
     padding-bottom: 40px;
-}
+} */
 
-.lorem-element-two li {
+/* .lorem-element-two li {
     font-family: 'Palanquin';
     font-size: 24px;
     font-weight: 400;
@@ -49,13 +53,13 @@ span {
     font-style: Bold;
     font-size: 24px;
     color: var(--neutral);
-}
+} */
 
-.lorem-element-three {
+/* .lorem-element-three {
     font-family: 'Palanquin';
     font-size: 24px;
     font-weight: 400;
-}
+} */
 
 .lorem-element-three ol {
     border-radius: 30px;
@@ -66,18 +70,7 @@ span {
     background-color: #4EA48733;
 }
 
-.lorem-element-four>p {
-    font-family: Palanquin;
-    font-weight: 400;
-    font-size: 24px;
-
-    color: #3D3D3D;
-
-
-
-}
-
-.share-button{
+/* .share-button{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -144,4 +137,4 @@ details{
 .hidden-links>div{
     display: flex;
     flex-direction: column;
-}
+} */
