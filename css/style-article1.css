@@ -85,13 +85,13 @@ body {
     flex-direction: column;
 }
 
-/* .lorem-element-two>p {
-    font-family: 'Palanquin';
+.lorem-element-two>p {
+    /* font-family: 'Palanquin';
     font-size: 24px;
-    font-weight: 400;
+    font-weight: 400; */
 
     padding-bottom: 40px;
-} */
+}
 
 /* .lorem-element-two li {
     font-family: 'Palanquin';
@@ -139,3 +139,27 @@ span {
 
 } */
 
+@media screen and (max-width: 768px) {
+    /* .slider_b {
+        display: flex;
+    } */
+
+    .pro-tipp-box {
+        position: relative;
+        top: 2px;
+        rotate: 1deg
+    }
+
+    .pro-tipp-content {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .share-button .arrow {
+        width: 50px;
+
+        position: absolute;
+        bottom: 24px;
+    }
+
+}

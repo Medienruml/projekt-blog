@@ -138,3 +138,24 @@ details{
     display: flex;
     flex-direction: column;
 } */
+
+@media screen and (max-width: 768px) {
+
+    .pro-tipp-box {
+        position: relative;
+        top: 2px;
+        rotate: 1deg
+    }
+
+    .pro-tipp-content {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .share-button .arrow {
+        width: 50px;
+
+        position: absolute;
+        bottom: 24px;
+    }
+}
