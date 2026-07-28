@@ -221,15 +221,17 @@ header a:active {
     flex: 5 0 70%;
 }
 
-.aticle-header-content > div:first-child {
+.aticle-header-content>div:first-child {
     display: flex;
     flex-direction: column;
     gap: 8px;
 }
 
-.aticle-header-content>.article-header-intro {
-    font: 400 32px 'Palanquin';
-
+.aticle-header-content>div>p.article-header-intro {
+    font-family: 'Palanquin';
+    font-size: clamp(1.13rem, calc(0.875rem + 1.250vw), 2.00rem);
+    font-weight: 400;
+    line-height: 120%;
     gap: 40px;
 }
 
@@ -296,11 +298,11 @@ header a:active {
 
 /* profi tipp */
 
-.pro-tipp-box{
+.pro-tipp-box {
     width: 200px;
     background-color: var(--primary-green);
 
-    padding: 8px 16px ;
+    padding: 8px 16px;
 
     display: flex;
     align-items: center;
@@ -313,19 +315,17 @@ header a:active {
     top: 20px;
 }
 
-.pro-tipp-box>img{
+.pro-tipp-box>img {
     width: 42px;
 }
 
-.pro-tipp-box>p{
+.pro-tipp-box>p {
     font: 700 28px 'Palanquin';
     color: var(--primary-yellow);
-
-
 }
 
-.pro-tipp-content{
-    background-color: var( --primary-green-bright);
+.pro-tipp-content {
+    background-color: var(--primary-green-bright);
 
     padding: 24px 16px;
     padding-left: 40px;
@@ -343,9 +343,22 @@ header a:active {
     text-decoration: none;
 }
 
+@media screen and (max-width: 992px) {
+    .pro-tipp-box {
+        position: relative;
+        top: 2px;
+        rotate: 1deg
+    }
+
+    .pro-tipp-content {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+
 /* Share-Button */
 
-.share-button{
+.share-button {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -356,12 +369,21 @@ header a:active {
     position: relative;
 }
 
-.share-button .arrow{
+.share-button .share-arrow-big {
     position: absolute;
-    bottom: 13px;
+    left: -15px;
+    top: 45px;
 }
 
- .share-button .follow-me {
+.share-button .share-arrow-small {
+    position: absolute;
+    left: 0px;
+    top: 50px;
+    display: none;
+}
+
+.share-button .follow-me {
+    position: relative;
     font-family: 'Arima';
     font-weight: 500;
     font-size: clamp(1.00rem, calc(0.857rem + 0.714vw), 1.50rem);
@@ -374,44 +396,84 @@ header a:active {
 .share-button summary {
     display: flex;
     align-items: center;
+    gap: 8px;
+    font: 700 24px 'Arima';
 
-    padding: 8px 16px;
+    height: 48px;
+
+    padding: 8px 18px;
 
     color: var(--primary-yellow);
     background-color: var(--primary-green);
 
     border-radius: 40px;
 
-    gap: 8px;
+    cursor: pointer;
 }
 
-.share-button details[open] summary img{
+.share-button details[open] summary img {
     display: none;
 }
 
-.share-button details{
+.share-button details[open] summary {
+    margin-left: 16px;
+}
+
+.share-button details {
     display: flex;
     align-items: center;
 
-    gap: 10px;
+    height: 54px;
 }
 
-.share-button .hidden-links a{
+.share-button details::details-content {
+    inline-size: 0;
+    opacity: 0;
+    transition-property: inline-size, content-visibility, opacity;
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in-out;
+    transition-behavior: allow-discrete;
+}
+
+.share-button details[open]::details-content {
+    inline-size: auto;
+    padding: 4px 10px;
+    opacity: 1;
+}
+
+.share-button .hidden-links a {
     display: flex;
 
     font: 600 18px 'Arima';
 
-    color: var( --primary-green);
+    color: var(--primary-green);
 }
 
-.share-button .hidden-links{
+.share-button .hidden-links {
     display: flex;
     gap: 16px;
 }
 
-.share-button .hidden-links>div{
+.share-button .hidden-links>div {
     display: flex;
     flex-direction: column;
+}
+
+@media screen and (max-width: 992px) {
+    .share-button .share-arrow-small {
+        display: block;
+    }
+
+    .share-button .share-arrow-big {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .share-button .follow-me br {
+        display: none;
+    }
+    
 }
 
 
