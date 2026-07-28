@@ -15,13 +15,13 @@ article img {
 }
 
 .two-columns {
-    display: flex; 
+    display: flex;
     flex-direction: column;
     gap: 48px;
 
 }
 
-.two-columns > div.articles {
+.two-columns>div.articles {
     display: flex;
     flex-direction: row;
     gap: 80px;
@@ -41,4 +41,14 @@ article img {
     margin-top: auto;
     aspect-ratio: 1/0.9;
     object-fit: cover;
+}
+
+@media screen and (max-width: 768px) {
+
+    .share-button .arrow {
+        width: 50px;
+
+        position: absolute;
+        bottom: 24px;
+    }
 }
