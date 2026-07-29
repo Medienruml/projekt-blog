@@ -390,13 +390,12 @@ section {
     display: flex;
     position: absolute;
 
-    transition: all 1s ease-in-out;
+    transition: all 500ms ease-in-out;
 }
 
 .slider_element {
     width: calc(100% / 4);
     height: 100%;
-    /* padding: 64px 128px 0 48px; */
     padding-top: clamp(64px, calc(110.286px - 3.214vw), 100px);
     padding-left: clamp(16px, calc(6.857px + 2.857vw), 48px);
     padding-right: clamp(16px, calc(-156px + 35.833vw), 360px);
@@ -461,7 +460,7 @@ input[type="radio"] {
     border-radius: 999px;
 
     cursor: pointer;
-    transition: 0.2s;
+    transition: 500ms;
 
     margin: 0 11px;
 }

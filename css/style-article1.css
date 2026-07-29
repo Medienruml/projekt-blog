@@ -6,7 +6,7 @@
     color: #F8F5EB;
 }
 
-.main-slider {
+/* .main-slider {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -47,6 +47,165 @@
 
 .slider_b_element:hover~.slider_b_element {
     transform: perspective(250px) rotateY(-20deg) translateX(120px);
+} */
+
+/* Slider big screen */
+.slider .slider-element {
+        width: calc(100% / 5);
+        aspect-ratio: 2/3;
+    }
+
+@media screen and (min-width: 1201px) {
+    .slider input {
+        display: none;
+    }
+
+    .slider {
+        width: 100%;
+        padding: 25px clamp(0px, calc(-320px + 26.667vw), 64px);;
+    }
+
+    .slider .slider-wrapper {
+        display: flex;
+
+    }
+
+    .slider .slider-element {
+        width: calc(100% / 5);
+        aspect-ratio: 2/3;
+        object-fit: cover;
+        border-radius: 16px;
+        box-shadow: 0 5px 10px rgba(0, 0, 0, 0.25);
+        transform: perspective(200px) rotateY(15deg) scaleX(0.95) translate(20px);
+        z-index: 0;
+        transition: all 500ms ease-in-out;
+    }
+
+    .slider .slider-element:hover {
+        z-index: 5;
+        transform: perspective(200px) rotateY(0deg) translateX(0px) scaleX(1.3) scaleY(1.15);
+
+        transition: all 500ms ease-in-out;
+    }
+
+    .slider .slider-element:hover~.slider-element {
+        transform: perspective(200px) rotateY(-15deg) scaleX(0.95) translatex(-20px);
+        transition: all 500ms ease-in-out;
+    }
+}
+
+/* Slider big screen end*/
+
+@media screen and (max-width: 1200px) {
+
+    /* Slider Mobil */
+
+    .slider {
+        position: relative;
+        width: 100%;
+        height: 400px;
+
+        display: flex;
+        justify-content: center;
+        align-items: flex-end;
+
+        overflow: hidden;
+    }
+
+    .slider input {
+        display: inline-block;
+        appearance: none;
+        z-index: 2;
+        margin-bottom: 16px;
+        width: 22px;
+        height: 22px;
+        background-color: rgba(78, 164, 135, 0.3);
+        border-radius: 999px;
+        margin: 0 4px;
+
+        cursor: pointer;
+        transition: 1s;
+    }
+
+    .slider input:checked {
+        width: 40px;
+        background-color: rgba(78, 164, 135, 1);
+    }
+
+    .slider-wrapper {
+        position: absolute;
+        width: 1000px;
+        height: 300px;
+        top: 20px;
+
+        display: flex;
+        align-items: center;
+
+        transition: all 1s ease-in-out;
+    }
+
+    .slider .slider-element {
+        width: 200px;
+        height: 300px;
+        border-radius: 16px;
+        transform: perspective(200px) rotateY(-15deg) scaleX(0.9);
+        transition: all 1s ease-in-out;
+        object-fit: cover;
+    }
+
+    .slider input[value="one"]:checked~.slider-wrapper {
+        transform: translateX(calc(100% / 5 * 2));
+    }
+
+    .slider input[value="two"]:checked~.slider-wrapper {
+        transform: translateX(calc(100% / 5 * 1));
+    }
+
+    .slider input[value="three"]:checked~.slider-wrapper {
+        transform: translateX(calc(100% / 5 * 0));
+    }
+
+    .slider input[value="four"]:checked~.slider-wrapper {
+        transform: translateX(calc(100% / 5 * -1));
+    }
+
+    .slider input[value="five"]:checked~.slider-wrapper {
+        transform: translateX(calc(100% / 5 * -2));
+    }
+
+    .slider input[value="two"]:checked~.slider-wrapper>.element-one {
+        transform: perspective(200px) rotateY(15deg) scaleX(0.9);
+    }
+
+    .slider input[value="three"]:checked~.slider-wrapper>.element-one,
+    .slider input[value="three"]:checked~.slider-wrapper>.element-two {
+        transform: perspective(200px) rotateY(15deg) scaleX(0.9);
+    }
+
+    .slider input[value="four"]:checked~.slider-wrapper>.element-one,
+    .slider input[value="four"]:checked~.slider-wrapper>.element-two,
+    .slider input[value="four"]:checked~.slider-wrapper>.element-three {
+        transform: perspective(200px) rotateY(15deg) scaleX(0.9);
+    }
+
+    .slider input[value="five"]:checked~.slider-wrapper>.element-one,
+    .slider input[value="five"]:checked~.slider-wrapper>.element-two,
+    .slider input[value="five"]:checked~.slider-wrapper>.element-three,
+    .slider input[value="five"]:checked~.slider-wrapper>.element-four {
+        transform: perspective(200px) rotateY(15deg) scaleX(0.9);
+    }
+
+    .slider input[value="one"]:checked~.slider-wrapper>.element-one,
+    .slider input[value="two"]:checked~.slider-wrapper>.element-two,
+    .slider input[value="three"]:checked~.slider-wrapper>.element-three,
+    .slider input[value="four"]:checked~.slider-wrapper>.element-four,
+    .slider input[value="five"]:checked~.slider-wrapper>.element-five {
+        transform: scaleX(1.1) scaleY(1.1);
+        z-index: 5;
+    }
+
+    /* Slider Mobil end */
+
 }
 
 .info {
