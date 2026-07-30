@@ -1,0 +1,67 @@
+.impressum-page {
+    max-width: 100%;
+    margin: 2rem auto;
+    padding: 0 1.5rem;
+
+    display: flex;
+    align-items: flex-start;
+
+    gap: 16px;
+}
+
+.impressum-page h1 {
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid #eaeaea;
+    padding-bottom: 0.5rem;
+
+    font-size: 3.25rem;
+}
+
+.impressum-info h2 {
+    font-size: 2rem;
+    display: flex;
+    justify-content: flex-start;
+
+    margin-bottom: 0.5rem;
+    color: var(--primary-green);
+}
+
+.impressum-info p {
+    margin: 0;
+}
+
+.impressum-info a {
+    text-decoration: none;
+    padding: 0.5rem;
+}
+
+.impressum-info a:visited {
+    color: brown;
+}
+
+.impressum-info a:hover {
+    text-decoration: underline;
+    color: orange;
+}
+
+@media screen and (max-width: 768px) {
+   .impressum-info{
+    display: block;
+    text-align: center;
+   }
+
+   .impressum-page h1 {
+    font-size: 2.25rem;
+}
+
+   .impressum-info h2{
+    display: block;
+    text-align: center;
+
+    font-size: 1.75rem;
+   }
+
+   .impressum-page img{
+    display: none;
+   }
+}
