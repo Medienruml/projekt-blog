@@ -471,7 +471,7 @@ header a:active {
     .share-button .follow-me br {
         display: none;
     }
-    
+
 }
 
 
@@ -550,14 +550,23 @@ footer .footer-social-media-buttons img {
     }
 }
 
-@media screen and (max-width: 992px) {
+@media screen and (max-width: 768px) {
     footer {
         height: 240px;
         padding-top: 30px !important;
         padding-bottom: 118px !important;
-
-        align-items: end;
     }
+}
+
+@media screen and (min-width: 769px) and (max-width: 992px) {
+    footer {
+        align-items: end;
+        padding-bottom: 32px !important;
+    }
+}
+
+@media screen and (max-width: 992px) {
+
 
     footer>div {
         display: flex;

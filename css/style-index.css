@@ -26,7 +26,7 @@
     right: 0;
     width: 75%;
     height: 533px;
-    background-image: url('/assets/img/hero-image.jpg');
+    background-image: url('/assets/img/hero-image_small.jpg');
     background-size: cover;
     background-position: right, center;
 }
@@ -402,25 +402,25 @@ section {
 }
 
 .element_one {
-    background-image: url('/assets/img/slider-img-01.jpg');
+    background-image: url('/assets/img/slider-img-01_small.jpg');
     background-size: cover;
     background-position: center;
 }
 
 .element_two {
-    background-image: url('/assets/img/slider-img-02.jpg');
+    background-image: url('/assets/img/slider-img-02_small.jpg');
     background-size: cover;
     background-position: center;
 }
 
 .element_three {
-    background-image: url('/assets/img/slider-img-03.jpg');
+    background-image: url('/assets/img/slider-img-03_small.jpg');
     background-size: cover;
     background-position: center;
 }
 
 .element_four {
-    background-image: url('/assets/img/slider-img-04.jpg');
+    background-image: url('/assets/img/slider-img-04_small.jpg');
     background-size: cover;
     background-position: center;
 }
@@ -587,10 +587,12 @@ input[type="radio"]:checked {
 }
 
 .contact-form input[type=text] {
-    font: 500 24px 'Roboto Mono';
+    font: 400 24px 'Palanquin';
+    color: var(--primary-green);
     border: unset;
     padding: 16px 8px;
     border-bottom: 1px solid black;
+    caret-shape: box;
 }
 
 
@@ -614,6 +616,8 @@ input[type="radio"]:checked {
     height: 18px;
     border: 2px solid black;
     border-radius: 2px;
+
+    flex-shrink: 0;
 }
 
 .submit input[type="checkbox"]:hover {
@@ -630,6 +634,7 @@ input[type="radio"]:checked {
 
 .submit p {
     font: 400 16px 'Palanquin';
+    line-height: 120%;
 }
 
 .submit p>em {

@@ -12,6 +12,16 @@
     flex-direction: column;
 }
 
+.lorem-element-two {
+    display: flex;
+    flex-direction: column;
+    gap: clamp(20px, calc(16.571px + 1.071vw), 32px);
+}
+
+.lorem-element-two ul {
+    padding-left: 30px;
+}
+
 
 
 @media screen and (max-width: 992px) {
